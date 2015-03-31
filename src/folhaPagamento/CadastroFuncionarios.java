@@ -2,9 +2,9 @@ package folhaPagamento;
 
 public class CadastroFuncionarios {
 	
-	private Repositorio funcionarios;
+	private RepositorioFuncionario funcionarios;
 	
-	public CadastroFuncionarios(Repositorio funcionarios) {
+	public CadastroFuncionarios(RepositorioFuncionario funcionarios) {
 		this.funcionarios = funcionarios;
 	}
 

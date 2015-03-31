@@ -1,6 +1,6 @@
 package folhaPagamento;
 
-public class RepositorioFuncionariosArray implements Repositorio{
+public class RepositorioFuncionariosArray implements RepositorioFuncionario{
 	
 	private Funcionario[] funcionarios;
 	private int indice;

@@ -32,7 +32,7 @@ package folhaPagamento;
 
 public class TestaFolha {
 
-	public static void main(String[] args) throws FuncionarioNaoEncontradoException {
+	public static void main(String[] args) throws FuncionarioNaoEncontradoException, FuncionarioJaCadastradoException {
 		
 		System.out.println();
 		System.out.println("QUESTÃO 01:");
@@ -91,7 +91,7 @@ public class TestaFolha {
 		System.out.println("===========");
 		System.out.println();
 
-		Repositorio rep1 = new RepositorioFuncionariosArray(10);
+		RepositorioFuncionario rep1 = new RepositorioFuncionariosArray(10);
 		
 		CadastroFuncionarios cadastro = new CadastroFuncionarios(rep1);
 		
@@ -117,9 +117,28 @@ public class TestaFolha {
 		System.out.println("QUESTÃO 03:");
 		System.out.println("===========");
 		System.out.println();
+
+//		cadastro.cadastrar(func1);
+//		cadastro.procurar("12345");
+//		cadastro.remover("09876");
+//		rep1.procurar("09876");
+//		rep1.remover("67890");
+		System.out.println(rep1.existe("48489"));
+
+		// ================================================================================
+				
+		System.out.println();
+		System.out.println("QUESTÃO 04:");
+		System.out.println("===========");
+		System.out.println();
+
+		Funcionario func8 = new Funcionario("Canteros", "88888", 4500);
+		rep1.inserir(func8);
+		System.out.println();
+		System.out.println("- Funcionário Procurado: " + rep1.procurar("11111").getNome());
+		System.out.println();
 		
-		
-		
+		// ================================================================================
 		
 	}
 	

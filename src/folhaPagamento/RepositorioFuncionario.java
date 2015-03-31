@@ -1,6 +1,6 @@
 package folhaPagamento;
 
-public interface Repositorio {
+public interface RepositorioFuncionario {
 
 	void inserir(Funcionario funcionario);
 	Funcionario procurar(String cpf) throws FuncionarioNaoEncontradoException;
