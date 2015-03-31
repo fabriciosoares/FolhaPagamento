@@ -15,6 +15,7 @@ public class Seguranca extends Funcionario {
 		this.ADICIONALNOTURNO = 12.5;
 	}
 	
+	@Override
 	public double calcularSalario () {
 		return super.getSalario() + ((super.getSalario() * this.ADICIONALNOTURNO) / 100);
 	}

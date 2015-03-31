@@ -18,6 +18,7 @@ public class Vendedor extends Funcionario {
 		this.totalVenda += venda;
 	}
 	
+	@Override
 	public double calcularSalario () {
 		return super.getSalario() + ((this.totalVenda * percentualComissao) / 100);
 	}

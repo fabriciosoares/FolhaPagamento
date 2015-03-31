@@ -13,6 +13,7 @@ public class Diretor extends Funcionario {
 	public void setGratificacao(double gratificacao) { this.gratificacao = gratificacao; }
 	
 	// Outros Metodos
+	@Override
 	public double calcularSalario () {
 		return super.getSalario() + this.gratificacao;
 	}
